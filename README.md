@@ -1,5 +1,14 @@
 **In Development**
 
+## Commentary to add
+### repo cloning and set up
+- what to add to .env and how to get these values
+- check code creates credentials.json if it does not exist
+### output location
+- output directory will be created
+- - will have raw extracted paginated json files 
+
+
 # concept2-data-utilities
 **Concept2 Data Utilities** is a Python-based project for fetching, aggregating, and analyzing performance data from the [Concept2 Logbook API](https://log.concept2.com/). 
 
@@ -14,3 +23,4 @@
 1. Clone the repository:
    ```bash
    git clone https://github.com/your-username/concept2-data-utilities.git
+
