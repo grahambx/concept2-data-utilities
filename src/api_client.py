@@ -1,6 +1,7 @@
 import requests
 import json
-from credential_manager import CredentialManager
+import os
+from src.credential_manager import CredentialManager
 
 
 class APIClient:
@@ -66,7 +67,14 @@ class APIClient:
 
             # Save results to a JSON file if successful
             if response.status_code == 200:
-                outfile = f"page{self.page}.json"
+                # Ensure the 'output' directory exists
+                output_dir = "output"
+                os.makedirs(output_dir, exist_ok=True)
+
+                # Define output file path
+                outfile = os.path.join(output_dir, f"page{self.page}.json")
+
+                # Write the json data to the file
                 with open(outfile, "w") as out:
                     json.dump(response.json(), out, indent=4)
 

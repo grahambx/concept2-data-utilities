@@ -3,7 +3,8 @@
 credentials.json
 .env
 .venv
-
+output/
+scratch.py
 
 # Others from Github template:
 

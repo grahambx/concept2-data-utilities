@@ -1,4 +1,4 @@
-from api_client import APIClient
+from src.api_client import APIClient
 
 
 def main():
